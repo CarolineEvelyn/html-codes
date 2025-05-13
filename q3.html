@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<center>
+<body>
+    
+     <p id="meuparagrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor nesciunt, corrupti
+        praesentium et reiciendis
+        repellendus inventore ratione nam sapiente adipisci ducimus ipsam quis ab aut quasi officia quisquam. Vero,
+        alias.</p>
+
+    <input type="text" id="primeirotexto" placeholder="digite algo aqui">
+    <button id="botao" onclick="mudartexto()">Mudar texto</button>
+
+    <script>
+        function mudartexto() {
+            const input = document.getElementById('primeirotexto').value;
+            const meuparagrafo = document.getElementById('meuparagrafo');
+
+            if (input === '') {
+                alert('Esta vazio, escreva algo!');
+
+            } else {
+                meuparagrafo.textContent = `Bom Dia ${input}`;
+            }
+
+        }
+    </script>
+
+
+</body>
+</center>
+</html>
